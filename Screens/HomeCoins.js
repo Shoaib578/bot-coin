@@ -364,7 +364,7 @@ await Axios.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/la
 
                 <TouchableOpacity
                   
-                  onPress={() => this.props.navigation.navigate("Coin",{symbol:this.state.feed_coin.symbol})}
+                  onPress={() => this.props.navigation.navigate("ViewHomeCoin",{coin:this.state.feed_coin.symbol})}
                 >
                   <Coin
                     rank={this.state.feed_coin.rank}
@@ -397,7 +397,7 @@ await Axios.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/la
 
                 <TouchableOpacity
                   
-                  onPress={() => this.props.navigation.navigate("Coin",{symbol:this.state.bnb_coin.symbol})}
+                  onPress={() => this.props.navigation.navigate("ViewHomeCoin",{coin:this.state.bnb_coin.symbol})}
                 >
 
                     <Coin
@@ -423,7 +423,7 @@ await Axios.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/la
 
                 <TouchableOpacity
                   
-                  onPress={() => this.props.navigation.navigate("Coin",{symbol:this.state.btc_coin.symbol})}
+                  onPress={() => this.props.navigation.navigate("ViewHomeCoin",{coin:this.state.btc_coin.symbol})}
                 >
 
                     <Coin
